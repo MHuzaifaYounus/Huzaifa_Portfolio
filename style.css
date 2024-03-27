@@ -24,7 +24,7 @@ body{
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
     background:linear-gradient(to left, var(--box-theme),var(--darkbox-theme));
-
+    overflow-x: hidden;
   
 }
 

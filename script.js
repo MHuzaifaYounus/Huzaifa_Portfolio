@@ -47,9 +47,11 @@ function makecard(projectLink, imgsorce, number, projecttitle) {
 
 
 }
-makecard("https://planview.netlify.app","images/plane.png","TOP # 1","PLanView Estate| Responsive Housing Scheme Website ")
-makecard("https://globallaw.netlify.app","images/global law.png","TOP # 2","GLobal Lawyer| Responsive Lawyer Hiring Company Website ")
-makecard("https://tastevibe.netlify.app","images/tastevibe.png","TOP # 3","TasteVibe| Responsive Resturant Fast Food And Drinks Website ")
-makecard("https://trippynow.netlify.app","images/trppy.png","TOP # 4","Trippy| Responsive Travling Journey Website ")
+makecard("https://netflix.netlify.app","images/netflix.png","TOP # 1","Netflix Clone| Netflix Clone with sign in page ")
+makecard("https://halal-spotify.freewebhostmost.com","images/spotify.png","TOP # 2","Halal Spotify| Spotify Clone with all features ")
+makecard("https://planview.netlify.app","images/plane.png","TOP # 3","PLanView Estate| Responsive Housing Scheme Website ")
+makecard("https://tastevibe.netlify.app","images/tastevibe.png","TOP # 4","TasteVibe| Responsive Resturant Fast Food And Drinks Website ")
+makecard("https://globallaw.netlify.app","images/global law.png","TOP # 5","GLobal Lawyer| Responsive Lawyer Hiring Company Website ")
+makecard("https://trippynow.netlify.app","images/trppy.png","TOP # 6","Trippy| Responsive Travling Journey Website ")
 
 
