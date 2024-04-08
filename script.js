@@ -1,11 +1,13 @@
 function makecard(projectLink, imgsorce, number, projecttitle) {
-    let col = document.createElement("div")
-    col.className = "col-lg-4"
-    document.getElementById("portfolio-container").append(col)
 
     let cardoverlay = document.createElement("div")
     cardoverlay.className = "card-overlayer"
-    col.append(cardoverlay)
+    cardoverlay.setAttribute("data-tilt-startX","20")
+    cardoverlay.setAttribute("data-tilt-startY","-20")
+    cardoverlay.setAttribute("data-tilt",null)
+    cardoverlay.setAttribute("data-tilt-reset-to-start","true")
+
+    document.getElementById("portfolio-container").append(cardoverlay)
 
     let card = document.createElement("div")
     card.className = "card"
@@ -47,11 +49,27 @@ function makecard(projectLink, imgsorce, number, projecttitle) {
 
 
 }
-makecard("https://netflix.netlify.app","images/netflix.png","TOP # 1","Netflix Clone| Netflix Clone with sign in page ")
+makecard("https://netflix1.netlify.app","images/netflix.png","TOP # 1","Netflix Clone| Netflix Clone with sign in page ")
 makecard("https://halal-spotify.freewebhostmost.com","images/spotify.png","TOP # 2","Halal Spotify| Spotify Clone with all features ")
 makecard("https://planview.netlify.app","images/plane.png","TOP # 3","PLanView Estate| Responsive Housing Scheme Website ")
 makecard("https://tastevibe.netlify.app","images/tastevibe.png","TOP # 4","TasteVibe| Responsive Resturant Fast Food And Drinks Website ")
 makecard("https://globallaw.netlify.app","images/global law.png","TOP # 5","GLobal Lawyer| Responsive Lawyer Hiring Company Website ")
 makecard("https://trippynow.netlify.app","images/trppy.png","TOP # 6","Trippy| Responsive Travling Journey Website ")
 
+let menu = document.querySelector(".menu")
+let cross = document.querySelector(".cross")
+let menubox = document.querySelector(".menu-box")
+menu.addEventListener("click", (e) => {
+    
+    menubox.style.display = "flex"
+   
+})
+cross.addEventListener("click", (e) => {
+    menubox.style.display = "none"
+})
 
+var slideUp = {
+    distance: '150%',
+    origin: 'bottom',
+    opacity: null
+};
