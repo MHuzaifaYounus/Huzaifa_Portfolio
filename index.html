@@ -272,7 +272,7 @@
                             </g>
                         </svg>
                     </div>
-                    <h2>+923212775227</h2>
+                    <h2>+923212875227</h2>
 
                 </div>
 
@@ -331,7 +331,7 @@
             <div class="contact-form">
 
 
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" required><br>
                     <label for="email">Email:</label><br>
@@ -364,8 +364,10 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         let typed = new Typed('#tagline', {
@@ -376,15 +378,49 @@
         });
         ScrollReveal({
             reset: true,
-            distace:'60px',
-            duration:2500,
-            delay:400,
+            distace: '60px',
+            duration: 2500,
+            delay: 400,
 
         });
-        ScrollReveal().reveal('.container', {delay:200 , origin:'right'});
-    
+        ScrollReveal().reveal('.container', { delay: 200, origin: 'right' });
 
-      
+
+
+
+
+        function sendEmail() {
+            let message = document.querySelector("#message").value
+            let name = document.querySelector("#name").value
+            let email = document.querySelector("#email").value
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "huzaifabuz@gmail.com",
+                Password: "6605A2B7C303016312160D4632CC9C4DD04B",
+                To: 'huzaifabuz@gmail.com',
+                From: "huzaifabuz@gmail.com",
+                Subject: "Email From Portfolio Website",
+                Body: `
+                Name: ${name}<br>
+
+                Email: ${email}<br>
+
+                Message: ${message}
+                `
+            }).then(
+                message => {
+                    if (message == "OK") {
+                        Swal.fire({
+                            title: "Success!",
+                            text: "Message Sent Successfully!",
+                            icon: "success"
+                        });
+                    }
+                }
+            );
+        }
+
+
 
     </script>
 </body>
