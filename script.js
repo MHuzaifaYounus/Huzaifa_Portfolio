@@ -52,7 +52,7 @@ function makecard(projectLink, imgsorce, number, projecttitle) {
 
 }
 makecard("https://huzareadify.netlify.app", "images/readify.png", "TOP # 1", "Readify| Personal book Library")
-makecard("https://halal-spotify.freewebhostmost.com", "images/spotify.png", "TOP # 2", "Halal Spotify| Spotify Clone with all features ")
+makecard("https://huzaspotify.netlify.app", "images/spotify.png", "TOP # 2", "Halal Spotify| Spotify Clone with all features ")
 makecard("https://monopolyatm.netlify.app", "images/monopoly.png", "TOP # 3", "Monopoly Bank| Manage Monopoly Board Game Bank Website  ")
 makecard("https://huzatodolist.netlify.app", "images/todo.png", "TOP # 4", "Todo List App| Manage Daily Todos  ")
 makecard("https://planview.netlify.app", "images/plane.png", "TOP # 5", "PLanView Estate| Responsive Housing Scheme Website ")
