@@ -350,7 +350,6 @@ nav svg {
 }
 
 .skill-right {
-    height: 500px;
     width: 50%;
     margin-top: 50px;
     display: flex;
@@ -405,7 +404,7 @@ nav svg {
 }
 
 .skill-bar {
-    height: 50px;
+    height: 10px;
     width: 90%;
     margin: 10px auto;
     border-radius: 09em;
@@ -448,6 +447,18 @@ nav svg {
 
 .github {
     width: 65%;
+}
+.react{
+    width:49%;
+}
+.nextjs{
+    width:38%;
+}
+.tailwind{
+    width:89%;
+}
+.shadcn{
+    width:76%;
 }
 
 .contact-container {

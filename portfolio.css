@@ -37,13 +37,18 @@
     height: 80%;
     transition: 0.5s;
     border: none;
-    transform: translateZ(20px) 
+    transform: translateZ(20px) ;
+    
 }
 
 .card-img {
     height: 80%;
     width: 100%;
+overflow:hidden
 
+}
+.card-img img:hover{
+    transform: scale(1.1);
 }
 
 .card-img img {
